@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard Interativo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+            min-height: 300px;
+        }
+
+        .mensagem-vazia {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        footer {
+            background-color: #e3e3e3;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Projeto Flashcards Interativos</h1>
+        <p>Teste seus conhecimentos de forma divertida!</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section id="container">
+            <!-- Mensagem padrão caso não existam cartões -->
+            <p class="mensagem-vazia">Nenhum flashcard adicionado ainda.</p>
+
+            <!-- Exemplo de cartão comentado
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é JavaScript?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>O JavaScript é uma linguagem de programação.</p>
+                    </div>
+                </div>
+            </article>
+            -->
+        </section>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>Desenvolvido para fins educacionais.</p>
+    </footer>
+
+    <!-- Scripts JS -->
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+</body>
+</html>
